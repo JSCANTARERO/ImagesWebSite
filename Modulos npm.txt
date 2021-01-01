@@ -1,0 +1,2 @@
+npm init --yes
+npm i express ejs fs-extra mongoose morgan multer timeago.js uuid (fs = file system, modulo con aracteristicas modernas de javascript)
