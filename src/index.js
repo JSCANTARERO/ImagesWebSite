@@ -3,8 +3,10 @@ const path = require('path')
 const morgan = require('morgan');
 const multer = require('multer');
 const { uuid } = require('uuidv4');
+
 // Initializations
 const app = express();
+require('./database');
 
 // Settings
 app.set('port', process.env.PORT || 3000);
