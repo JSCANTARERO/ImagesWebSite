@@ -20,6 +20,8 @@ app.use(multer({dest: path.join(__dirname, 'public/img/uploads')}).single('image
 
 
 // Routes
+app.use(require('./routes/index'));
+
 
 // Static files
 
