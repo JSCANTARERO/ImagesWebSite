@@ -6,10 +6,13 @@ router.get('/', (req, res) => {
 });
 
 router.get('/upload', (req, res) => {
-    res.send('Form Upload');
+    res.render('upload');
 });
 
-router.post('/uplaod', (req, res) => {
+router.post('/upload', (req, res) => {
+    console.log(req.file); 
+    //Cuando multer sube una imagen este la coloca en la carpeta que public pero ademas
+    //hace la informacion de la imagen disponible a traves del req.file
     res.send('Uploaded');
 });
 
